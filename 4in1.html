@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <input type="text" style="width:180px" id="text1">
+        <input type="text" style="width:180px" id="text2"><br><br>
+        <button type="button" value="+" onclick="math(this.value)">Addition(+)</button>
+        <button type="button" value="-" onclick="math(this.value)">Subtraction(-)</button>
+        <button type="button" value="x" onclick="math(this.value)">Mutltiplication(x)</button>
+        <button type="button" value=":" onclick="math(this.value)">Division(/)</button>
+        <div id="hienthi">
+        <script>
+            function math(toantu)
+            {
+                let text1=parseInt(document.getElementById("text1").value);
+                let text2=parseInt(document.getElementById("text2").value);
+                if(toantu =="+")
+                {
+                    document.getElementById("hienthi").innerHTML="Result Addition: "+(text1+text2);
+                }
+                if(toantu=="-")
+                {
+                    document.getElementById("hienthi").innerHTML="Result Addition: "+(text1-text2);
+                }
+                if(toantu=="x")
+                {
+                    document.getElementById("hienthi").innerHTML="Result Addition: "+(text1*text2);
+                }
+                if(toantu==":")
+                {
+                    document.getElementById("hienthi").innerHTML="Result Addition: "+(text1/text2);
+                }
+            }
+        </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" style="width:180px" id="text1">
+    <input type="text" style="width:180px" id="text2"><br><br>
+    <button type="button" onclick="Addition()">Addition(+)</button>
+    <button type="button" onclick="Subtraction()">Subtraction(-)</button>
+    <button type="button" onclick="Mutltiplication()">Mutltiplication(x)</button>
+    <button type="button" onclick="Division()">Division(/)</button>
+    <div id="hienthi">
+    <script>
+    
+        
+        function Addition()
+        {
+            let text1=parseInt(document.getElementById("text1").value);
+            let text2=parseInt(document.getElementById("text2").value);
+            document.getElementById("hienthi").innerHTML="Result Addition : "+(text1+text2);
+        }
+        function Subtraction()
+        {
+            let text1=parseInt(document.getElementById("text1").value);
+            let text2=parseInt(document.getElementById("text2").value);
+            document.getElementById("hienthi").innerHTML="Result Subtraction : "+(text1-text2);
+        }
+        function Mutltiplication()
+        {
+            let text1=parseInt(document.getElementById("text1").value);
+            let text2=parseInt(document.getElementById("text2").value);
+            document.getElementById("hienthi").innerHTML="Result Mutltiplication : "+(text1*text2);
+        }
+        function Division()
+        {
+            let text1=parseInt(document.getElementById("text1").value);
+            let text2=parseInt(document.getElementById("text2").value);
+            document.getElementById("hienthi").innerHTML="Result Division : "+(text1/text2);
+        }
+    </script>
+</body>
+</html>
